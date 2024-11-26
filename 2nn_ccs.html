@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuronales Netz des Cognitive Computing Systems (CCS)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: block;
+            white-space: pre-wrap;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .comparison {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .comparison div {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+        ul {
+            margin: 0;
+            padding: 0 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Neuronales Netz des Cognitive Computing Systems (CCS)</h1>
+    
+    <section>
+        <h2>Was ist das neuronale Netz von CCS?</h2>
+        <p>Das Cognitive Computing System (CCS) basiert auf einer künstlichen neuronalen Netzarchitektur, die Informationen in Schichten verarbeitet, ähnlich wie das menschliche Gehirn. Es verwendet Synapsen (Gewichte) und Neuronen (Aktivierungen), um Daten zu analysieren und Muster zu erkennen.</p>
+    </section>
+
+    <section>
+        <h2>Aufbau des Netzwerks</h2>
+        <ul>
+            <li>Das Netzwerk besteht aus <strong>sechs Gehirnmodulen</strong>, die spezialisierte Funktionen ausführen.</li>
+            <li>Jedes Modul ist für unterschiedliche Aufgaben verantwortlich, wie z. B. Datenverarbeitung, Mustererkennung und Vorhersage.</li>
+            <li>Die Synapsen sind Verbindungen zwischen den Neuronen, die gewichtet werden, um die Bedeutung einzelner Informationen zu steuern.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Codeschnipsel</h2>
+        <p>Hier ein Beispiel für die Initialisierung eines neuronalen Netzes in CCS:</p>
+        <code>
+// Initialisierung des neuronalen Netzes
+import numpy as np
+
+class NeuralNetwork:
+    def __init__(self, input_size, hidden_size, output_size):
+        self.weights_input_hidden = np.random.randn(input_size, hidden_size)
+        self.weights_hidden_output = np.random.randn(hidden_size, output_size)
+        self.bias_hidden = np.zeros((1, hidden_size))
+        self.bias_output = np.zeros((1, output_size))
+
+    def forward(self, X):
+        self.hidden_layer = self.sigmoid(np.dot(X, self.weights_input_hidden) + self.bias_hidden)
+        self.output_layer = self.sigmoid(np.dot(self.hidden_layer, self.weights_hidden_output) + self.bias_output)
+        return self.output_layer
+
+    def sigmoid(self, x):
+        return 1 / (1 + np.exp(-x))
+        </code>
+        <p>Dieser Code zeigt, wie Eingabedaten durch eine versteckte Schicht verarbeitet werden, bevor sie die Ausgabeschicht erreichen.</p>
+    </section>
+
+    <section>
+        <h2>Vergleich mit einem echten Gehirn</h2>
+        <div class="comparison">
+            <div>
+                <h3>CCS</h3>
+                <ul>
+                    <li>Künstliche Synapsen und Neuronen basieren auf mathematischen Modellen.</li>
+                    <li>Fähigkeit zur Analyse großer Datenmengen in kurzer Zeit.</li>
+                    <li>Modular und flexibel für unterschiedliche Anwendungen.</li>
+                    <li>Abhängig von Datenqualität und Rechenleistung.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Menschliches Gehirn</h3>
+                <ul>
+                    <li>Biologische Synapsen und Neuronen basieren auf chemischen Prozessen.</li>
+                    <li>Fähigkeit zur Intuition und kreativen Problemlösung.</li>
+                    <li>Parallelverarbeitung mit enormer Effizienz.</li>
+                    <li>Empfindlich gegenüber Ermüdung und anderen physischen Einschränkungen.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3D-Netzwerktopologie</h2>
+        <p>Die 3D-Visualisierung des CCS zeigt die Verbindungen zwischen Neuronen, ähnlich den Synapsen im Gehirn.</p>
+        <iframe src="network_topology.html" width="100%" height="500" style="border: none;"></iframe>
+    </section>
+
+    <section>
+        <h2>Zusammenfassung</h2>
+        <p>Das neuronale Netz von CCS ist ein beeindruckendes Beispiel für die Leistungsfähigkeit moderner KI-Systeme. Mit seiner modularen Struktur und seiner Fähigkeit, große Datenmengen effizient zu verarbeiten, bietet es enorme Vorteile in der Datenanalyse. Trotz der Unterschiede zum menschlichen Gehirn zeigt es, dass KI-Systeme in der Lage sind, komplexe Aufgaben mit erstaunlicher Präzision zu lösen.</p>
+    </section>
+</body>
+</html>

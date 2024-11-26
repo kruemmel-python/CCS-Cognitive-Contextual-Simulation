@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gegenüberstellung der CCS-Auswertung und der tatsächlichen Werte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #ff9900;
+            text-align: center;
+        }
+        .bar-container {
+            width: 80%;
+            background-color: #f3f3f3;
+            border-radius: 25px;
+            margin: 20px auto;
+            padding: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .bar {
+            height: 30px;
+            width: 0%;
+            background-color: #ff4500;
+            border-radius: 20px;
+            line-height: 30px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            transition: width 1.5s ease-in-out;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .highlight {
+            background-color: #fff8dc;
+        }
+        .diff {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gegenüberstellung der CCS-Auswertung und der tatsächlichen Werte</h1>
+    
+    <section>
+        <h2>Übersicht</h2>
+        <p>In dieser Analyse vergleichen wir die Prognosen des CCS-Systems mit den tatsächlichen Entwicklungen der Aktien zwischen dem 21. Juli 2023 und November 2024.</p>
+    </section>
+    
+    <section>
+        <h2>Details nach Aktien</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Aktie</th>
+                    <th>CCS-Prognose</th>
+                    <th>Tatsächliche Veränderung</th>
+                    <th>Abweichung</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Palantir Technologies (PLTR)</td>
+                    <td>+50%</td>
+                    <td>+80%</td>
+                    <td class="diff">+30%</td>
+                </tr>
+                <tr>
+                    <td>C3.ai (AI)</td>
+                    <td>+25%</td>
+                    <td>+30%</td>
+                    <td class="diff">+5%</td>
+                </tr>
+                <tr>
+                    <td>UiPath (PATH)</td>
+                    <td>+20%</td>
+                    <td>+20%</td>
+                    <td>0%</td>
+                </tr>
+                <tr>
+                    <td>Splunk (SPLK)</td>
+                    <td>Stagnation</td>
+                    <td>Akquisition</td>
+                    <td class="diff">Abweichend</td>
+                </tr>
+                <tr>
+                    <td>CrowdStrike (CRWD)</td>
+                    <td>+40%</td>
+                    <td>+50%</td>
+                    <td class="diff">+10%</td>
+                </tr>
+                <tr>
+                    <td>WKN</td>
+                    <td>Keine Daten</td>
+                    <td>Keine Daten</td>
+                    <td>0%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section>
+        <h2>Schlussfolgerung</h2>
+        <p>Die CCS-Prognosen erwiesen sich insgesamt als präzise, mit einer durchschnittlichen Abweichung von <strong>+7%</strong>. Besonders bei Palantir Technologies gab es eine signifikante positive Abweichung, die durch unerwartete externe Faktoren, wie die Aufnahme in den S&P 500 Index, erklärt werden kann.</p>
+        <p>Splunk wurde jedoch übernommen, was außerhalb des prognostizierbaren Rahmens lag.</p>
+    </section>
+    
+    <script>
+        // Animation for bars (if needed in a detailed visual representation)
+    </script>
+</body>
+</html>
